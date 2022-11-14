@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70f8e07ec27846a4b81cfb8548559fb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cibleTransform: {fileID: 1486466127167525559}
   speedModifier: 0.01
   sonKill: {fileID: 8300000, guid: 80570dc50b378964f995d356e27bfb0c, type: 3}
-  cibleTransform: {fileID: 1486466127167525559}
-  player: {fileID: 0}
+  killEffect: {fileID: 5328078135046063362, guid: 38507fa36e649c740b78e49dc8cac7a4, type: 3}

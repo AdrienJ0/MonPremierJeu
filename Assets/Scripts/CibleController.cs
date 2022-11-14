@@ -5,10 +5,13 @@ using UnityEngine;
 public class CibleController : MonoBehaviour
 {
     private Rigidbody cibleRigidbody;
+    [SerializeField] private Transform cibleTransform;
     [SerializeField] private float speedModifier = 0.01f;
     private static LayerMask ballLayer;
 
     [SerializeField] private AudioClip sonKill;
+
+    [SerializeField] private GameObject killEffect; //Particules qui apparaissent quand on touche une cible
 
     private void Awake() {
             cibleRigidbody = GetComponent<Rigidbody>();
@@ -35,7 +38,9 @@ public class CibleController : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
             if (other.gameObject.layer == ballLayer){
                 GetComponent<AudioSource>().PlayOneShot(sonKill);
+                Instantiate(killEffect, cibleTransform.position, killEffect.transform.rotation); //Génère des particules de sang
                 Destroy(gameObject);
+
                 Player.addNbPoints(5);
                 //Debug.Log("Bien joué! +5 points!");
                 //Debug.Log(Player.getNbPoints());
@@ -45,4 +50,5 @@ public class CibleController : MonoBehaviour
                 Debug.Log("Collision !");
             } */
     }
+
 }

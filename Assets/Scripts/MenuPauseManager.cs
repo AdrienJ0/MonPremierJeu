@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Cette classe gère l'affichage du menu Pause
 public class MenuPauseManager : MonoBehaviour
 {
     public static bool gameIsPaused = false;
@@ -30,6 +31,7 @@ public class MenuPauseManager : MonoBehaviour
         }
     }
 
+    //Fonction qui met le jeu en pause
     public void Paused(){
         Cursor.lockState = CursorLockMode.None;
         menuPause.SetActive(true); //On active le menu pause

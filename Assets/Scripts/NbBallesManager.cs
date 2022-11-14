@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+//Classe qui gère l'affichage du nombre de balles restantes
 public class NbBallesManager : MonoBehaviour
 {
     

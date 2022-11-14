@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//Classe qui gère l'affichage de l'écran de démarrage du jeu
 public class StartScreenManager : MonoBehaviour
 {
     private int nbSecondes = 3;

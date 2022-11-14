@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+////Classe qui gère l'affichage du pseudo du joueur
 public class PseudoManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textComponent;

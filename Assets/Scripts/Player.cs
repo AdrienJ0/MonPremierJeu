@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Classe qui stocke les infos du player
 public class Player : MonoBehaviour
 {
     [SerializeField] public static string pseudo;
